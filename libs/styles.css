@@ -1,0 +1,72 @@
+ 
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    overflow:hidden;
+    width:100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+ 
+.top-nav {
+    background-color: blue;
+    overflow: hidden;
+}
+ 
+.top-nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+ 
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+ 
+.top-nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+ 
+a svg{
+  transition:all .5s ease;
+ 
+  &:hover{
+    #transform:rotate(180deg);
+  }
+}
+ 
+#ico {
+  display: none;
+}
+
+#home {
+  position: relative;
+  float: left;
+  padding-bottom: 22px;
+}
+
+#todo {
+  position: relative;
+  float: right;
+  padding-bottom: 22px;
+}
+
+
+.top-nav .search-container {
+  float: right;
+}
+
+.top-nav input[type=text] {
+  padding: 6px;
+  margin-top: 15px;
+  font-size: 17px;
+  border: none;
+}
